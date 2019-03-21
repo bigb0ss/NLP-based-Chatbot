@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>NLP Chat B0T</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+	form{
+		margin: 0 auto;
+		width : 250px;
+	}
+	input{
+		margin-left: 2px;
+	}
+	.card{
+		border-color: green;
+	}
+</style>
+<body>
+
+<h1 align="center"> NLP Chat B0T</h1>
+<div class='card'>
+	<br>
+	<br>
+<form action="/reply" class="form-inline" method="post" >
+    <label for="staticEmail2" class="sr-only">User Input</label>
+    <input type="text"  placeholder="type your sentence here ..." name="input">
+
+	<input type="submit" class="btn btn-outline-success" value="reply">
+</form>
+<br>
+<br>
+</div>
+<div class="jumbotron">
+	<div class="row">
+		<div class='col-md-3'>
+		</div>
+		<div class='col-md-6'>
+			<div class="card">
+			<h5>ROBO : <span>{{output}}</span></h5>	
+			</div>		
+		</div>		
+		<div class='col-md-3'>
+		</div>
+	</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+</body>
+</html>
